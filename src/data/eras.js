@@ -10,7 +10,7 @@ const eras = [
       "Rise of jukebox culture",
       "Vinyl records dominate"
     ],
-    song: "https://www.youtube.com/embed/ViZ3X1Y5k6w"
+    song: "https://www.youtube.com/embed/vGJTaP6anOU" // Elvis Presley - Jailhouse Rock
   },
   {
     id: "1980s",
@@ -23,7 +23,7 @@ const eras = [
       "Rise of music videos",
       "Synthesizers everywhere"
     ],
-    song: "https://www.youtube.com/embed/9bZkp7q19f0"
+    song: "https://www.youtube.com/embed/Zi_XLOBDo_Y" // Michael Jackson - Billie Jean
   },
   {
     id: "2000s",
@@ -36,7 +36,7 @@ const eras = [
       "Rise of digital music",
       "CD era peak and decline"
     ],
-    song: "https://www.youtube.com/embed/kffacxfA7G4"
+    song: "https://www.youtube.com/embed/kffacxfA7G4" // Eminem - Lose Yourself
   }
 ];
 
