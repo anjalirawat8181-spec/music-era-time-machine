@@ -16,14 +16,16 @@ function App() {
   }, [activeEra]);
 
 return (
-  <div>
+  <div style={{ fontFamily: "sans-serif" }}>
     <EraHero era={activeEra} />
 
-    <ArtistCarousel artists={activeEra.artists} />
+    <div style={{ paddingBottom: "80px" }}>
+      <ArtistCarousel artists={activeEra.artists} />
 
-    <CulturalSnapshot facts={activeEra.facts} />
+      <CulturalSnapshot facts={activeEra.facts} />
 
-    <SongPreview song={activeEra.song} />
+      <SongPreview song={activeEra.song} />
+    </div>
 
     <Timeline eras={eras} setActiveEra={setActiveEra} />
   </div>

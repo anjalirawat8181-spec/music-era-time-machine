@@ -12,13 +12,14 @@ function ArtistCarousel({ artists }) {
         <div
           key={index}
           style={{
-            minWidth: "150px",
-            padding: "20px",
-            borderRadius: "10px",
-            background: "#222",
-            color: "#fff",
-            textAlign: "center",
-          }}
+         minWidth: "150px",
+         padding: "20px",
+         borderRadius: "12px",
+        background: "#1a1a1a",
+         color: "#fff",
+        textAlign: "center",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+}}
         >
           {artist}
         </div>

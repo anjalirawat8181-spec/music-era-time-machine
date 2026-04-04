@@ -2,12 +2,13 @@ function GenreTags({ genres }) {
   return (
     <div
       style={{
-        display: "flex",
-        gap: "10px",
-        justifyContent: "center",
-        marginTop: "10px",
-        flexWrap: "wrap",
-      }}
+  padding: "8px 14px",
+  borderRadius: "20px",
+  background: "#000",
+  color: "#fff",
+  fontSize: "13px",
+  fontWeight: "500",
+}}
     >
       {genres.map((genre, index) => (
         <span
