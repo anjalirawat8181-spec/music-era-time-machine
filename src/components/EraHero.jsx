@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import GenreTags from "./GenreTags";
 
 function EraHero({ era }) {
   return (
@@ -18,7 +19,7 @@ function EraHero({ era }) {
       }}
     >
       <h1 style={{ fontSize: "60px" }}>{era.name}</h1>
-      <p>{era.genres.join(" • ")}</p>
+      <GenreTags genres={era.genres} />
     </motion.div>
   );
 }
