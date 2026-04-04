@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import eras from "./data/eras";
+import ArtistCarousel from "./components/ArtistCarousel";
 import Timeline from "./components/Timeline";
 import EraHero from "./components/EraHero";
 
@@ -13,12 +14,15 @@ function App() {
     );
   }, [activeEra]);
 
-  return (
-    <div>
-      <EraHero era={activeEra} />
-      <Timeline eras={eras} setActiveEra={setActiveEra} />
-    </div>
-  );
+return (
+  <div>
+    <EraHero era={activeEra} />
+
+    <ArtistCarousel artists={activeEra.artists} />
+
+    <Timeline eras={eras} setActiveEra={setActiveEra} />
+  </div>
+);
 }
 
 export default App;
