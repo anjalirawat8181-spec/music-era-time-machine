@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 function EraHero({ era }) {
-  // 🎨 Dynamic effects
   let extraStyle = {};
 
   if (era.id === "1980s") {
@@ -23,25 +22,28 @@ function EraHero({ era }) {
   }
 
   return (
-    <motion.div
-      key={era.id}
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      style={{
-        height: "80vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "var(--bg-color)",
-        color: era.textColor,
-        fontFamily: era.font,
-        ...extraStyle, // 🔥 apply effect
-      }}
-    >
-      <h1 style={{ fontSize: "60px" }}>{era.name}</h1>
-    </motion.div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={era.id}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 1.1 }}
+        transition={{ duration: 0.6 }}
+        style={{
+          height: "80vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          background: "var(--bg-color)",
+          color: era.textColor,
+          fontFamily: era.font,
+          ...extraStyle,
+        }}
+      >
+        <h1 style={{ fontSize: "60px" }}>{era.name}</h1>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 
