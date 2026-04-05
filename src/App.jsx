@@ -6,6 +6,7 @@ import EraHero from "./components/EraHero";
 import CulturalSnapshot from "./components/CulturalSnapshot";
 import SongPreview from "./components/SongPreview";
 function App() {
+  const [isMuted, setIsMuted] = useState(true);
   const [activeEra, setActiveEra] = useState(eras[0]);
 
   useEffect(() => {
