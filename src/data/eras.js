@@ -3,6 +3,8 @@ const eras = [
     id: "1950s",
     name: "1950s",
     color: "#f5e6cc",
+    font: "'Playfair Display', serif",
+    textColor: "#3a2c2c",
     artists: [
       "Elvis Presley", "Chuck Berry", "Little Richard",
       "Buddy Holly", "Ray Charles", "Fats Domino",
@@ -17,10 +19,13 @@ const eras = [
     ],
     song: "https://www.youtube.com/embed/vGJTaP6anOU"
   },
+
   {
     id: "1960s",
     name: "1960s",
     color: "#f7ff00",
+    font: "cursive",
+    textColor: "#222",
     artists: [
       "The Beatles", "The Rolling Stones", "Jimi Hendrix",
       "Bob Dylan", "Aretha Franklin", "The Doors",
@@ -35,10 +40,13 @@ const eras = [
     ],
     song: "https://www.youtube.com/embed/A_MjCqQoLLA"
   },
+
   {
     id: "1970s",
     name: "1970s",
     color: "#d4a373",
+    font: "'Montserrat', sans-serif",
+    textColor: "#2b2b2b",
     artists: [
       "ABBA", "Led Zeppelin", "Pink Floyd",
       "Bee Gees", "David Bowie", "Queen",
@@ -51,15 +59,18 @@ const eras = [
       "Concerts became large-scale productions",
       "Genres diversified rapidly"
     ],
-    song: "https://www.youtube.com/embed/3JWTaaS7LdU"
+    song: "https://www.youtube.com/embed/BshxCIjNEjY" // Super Trouper (working embed)
   },
+
   {
     id: "1980s",
     name: "1980s",
     color: "#ff007f",
+    font: "'Courier New', monospace",
+    textColor: "#ffffff",
     artists: [
       "Michael Jackson", "Madonna", "Prince",
-      "Whitney Houston", "U2", "Bon Jovi","Bees Gees"
+      "Whitney Houston", "U2", "Bon Jovi", "Bee Gees"
     ],
     genres: ["Pop", "Synthwave", "Rock"],
     facts: [
@@ -70,10 +81,13 @@ const eras = [
     ],
     song: "https://www.youtube.com/embed/XpqqjU7u5Yc"
   },
+
   {
     id: "1990s",
     name: "1990s",
     color: "#6b705c",
+    font: "Impact, fantasy",
+    textColor: "#111",
     artists: [
       "Nirvana", "Tupac", "Notorious B.I.G.",
       "Spice Girls", "Backstreet Boys", "Radiohead",
@@ -88,14 +102,17 @@ const eras = [
     ],
     song: "https://www.youtube.com/embed/hTWKbfoikeg"
   },
+
   {
     id: "2000s",
     name: "2000s",
     color: "#00aaff",
+    font: "'Arial Black', sans-serif",
+    textColor: "#000",
     artists: [
       "Eminem", "Beyoncé", "Coldplay",
       "Kanye West", "Rihanna", "Linkin Park",
-     "Britney Spears"
+      "Britney Spears"
     ],
     genres: ["Hip Hop", "Pop", "R&B"],
     facts: [
@@ -106,10 +123,13 @@ const eras = [
     ],
     song: "https://www.youtube.com/embed/kffacxfA7G4"
   },
+
   {
     id: "2010s",
     name: "2010s",
     color: "#ffb4a2",
+    font: "'Georgia', serif",
+    textColor: "#333",
     artists: [
       "Lord Huron", "Taylor Swift", "Ed Sheeran",
       "Adele", "Bruno Mars", "The Weeknd",
@@ -124,24 +144,27 @@ const eras = [
     ],
     song: "https://www.youtube.com/embed/KtlgYxa6BMU"
   },
-{
-  id: "2020s",
-  name: "2020s",
-  color: "#d6e4ff", // soft pastel blue
-  artists: [
-    "Billie Eilish", "Doja Cat", "Olivia Rodrigo",
-    "Bad Bunny", "Harry Styles",
-    "Travis Scott", "Lana Del Rey"
-  ],
-  genres: ["Alt Pop", "Indie", "Hip Hop"],
-  facts: [
-    "TikTok drives global music trends",
-    "Genre boundaries are blurring",
-    "Independent artists are rising",
-    "Short-form content shapes music success"
-  ],
-  song: "https://www.youtube.com/embed/V9PVRfjEBTI"
-}
+
+  {
+    id: "2020s",
+    name: "2020s",
+    color: "#d6e4ff",
+    font: "'Poppins', sans-serif",
+    textColor: "#1a1a1a",
+    artists: [
+      "Billie Eilish", "Doja Cat", "Olivia Rodrigo",
+      "Bad Bunny", "Harry Styles",
+      "Travis Scott", "Lana Del Rey"
+    ],
+    genres: ["Alt Pop", "Indie", "Hip Hop"],
+    facts: [
+      "TikTok drives global music trends",
+      "Genre boundaries are blurring",
+      "Independent artists are rising",
+      "Short-form content shapes music success"
+    ],
+    song: "https://www.youtube.com/embed/V9PVRfjEBTI"
+  }
 ];
 
 export default eras;

@@ -9,14 +9,15 @@ function EraHero({ era }) {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       style={{
-        height: "80vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "var(--bg-color)",
-        color: "var(--text-color)",
-      }}
+  height: "80vh",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  background: "var(--bg-color)",
+  color: era.textColor,
+  fontFamily: era.font,   // ✅ THIS LINE IS IMPORTANT
+}}
     >
       <h1 style={{ fontSize: "60px" }}>{era.name}</h1>
       <GenreTags genres={era.genres} />
