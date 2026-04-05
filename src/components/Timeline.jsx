@@ -2,9 +2,7 @@ function Timeline({ eras, setActiveEra }) {
   return (
     <div
       style={{
-        position: "fixed",
-        bottom: "0",
-        width: "100%",
+          width: "100%",
         display: "flex",
         justifyContent: "center",
         gap: "10px",
@@ -17,11 +15,10 @@ function Timeline({ eras, setActiveEra }) {
           key={era.id}
           onClick={() => setActiveEra(era)}
           style={{
-            padding: "10px 15px",
-            borderRadius: "20px",
-            border: "none",
-            cursor: "pointer",
-            background: "#fff",
+            display: "flex",
+            justifyContent: "center",
+            gap: "10px",
+            padding: "10px",
           }}
         >
           {era.name}

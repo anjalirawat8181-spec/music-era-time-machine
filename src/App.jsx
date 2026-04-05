@@ -3,6 +3,7 @@ import eras from "./data/eras";
 import ArtistCarousel from "./components/ArtistCarousel";
 import Timeline from "./components/Timeline";
 import EraHero from "./components/EraHero";
+import NowPlayingBar from "./components/NowPlayingBar";
 import CulturalSnapshot from "./components/CulturalSnapshot";
 import SongPreview from "./components/SongPreview";
 function App() {
@@ -20,15 +21,19 @@ return (
   <div style={{ fontFamily: "sans-serif" }}>
     <EraHero era={activeEra} />
 
-    <div style={{ paddingBottom: "80px" }}>
+    <div style={{ paddingBottom: "120px" }}>
       <ArtistCarousel artists={activeEra.artists} />
-
       <CulturalSnapshot facts={activeEra.facts} />
-
-      <SongPreview song={activeEra.song} />
+      <SongPreview song={activeEra.song} isMuted={isMuted} />
     </div>
 
-    <Timeline eras={eras} setActiveEra={setActiveEra} />
+    <NowPlayingBar
+      era={activeEra}
+      isMuted={isMuted}
+      setIsMuted={setIsMuted}
+      eras={eras}
+      setActiveEra={setActiveEra}
+    />
   </div>
 );
 }
